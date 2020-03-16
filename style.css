@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+header .navbar-brand {
+  font-size: 25px;
+}
+header a {
+  font-size: 20px;
+  color: #666;
+}
+header a:hover {
+  color: #444;
+}
+header .dropdown-menu {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+header .dropdown-menu a {
+  padding: 5px 8px;
+  font-size: 18px;
+  color: #666;
+  border-radius: 3px;
+}
+header .dropdown-menu a:hover {
+  color: #444;
+  background-color: #eee;
+}
+
+main .post .post-title {
+  padding: 10px 20px;
+  font-size: 40px;
+  color: #333;
+}
+main .post .post-content {
+  padding: 10px;
+}
+main .post .post-content h2 {
+  padding: 10px;
+  font-size: 35px;
+  color: #444;
+}
+main .post .post-content h3 {
+  padding: 10px;
+  font-size: 30px;
+  color: #444;
+}
+main .post .post-content h4 {
+  padding: 10px;
+  font-size: 25px;
+  color: #444;
+}
+main .post .post-content p {
+  padding: 10px;
+  font-size: 20px;
+  color: #666;
+}
+main .post .post-content img {
+  width: 100%;
+  margin: 10px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+main .post .post-content figcaption {
+  text-align: center;
+  color: #777;
+}
+main .post .post-content .more-link {
+  display: none;
+}
+main .post .permalink {
+  display: block;
+  width: -moz-fit-content;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  background-color: #e87979;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+main .post .permalink:hover {
+  color: #e87979;
+  background-color: #fff;
+}
+main .post-title-container {
+  background: linear-gradient(148deg, #e87979 0%, #e23d3d 100%);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+}
+main .post-title-container .post-title {
+  padding-top: 120px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+main .post-title-container .post-details {
+  display: flex;
+  background: rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+main .post-title-container .post-details .post-author {
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+main .post-title-container .post-details .post-date {
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+main .post-tags-container .post-tags {
+  margin: 25px 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .post-tags-container .post-tags .post-tags-title {
+  margin: 8px;
+  font-size: 20px;
+  color: #555;
+}
+main .post-tags-container .post-tags .post-tag {
+  padding: 3px 5px;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #e87979;
+  border: 2px solid #e87979;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+main .post-tags-container .post-tags .post-tag:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #e87979;
+}
+main .post-main-container {
+  margin-top: 25px;
+}
+main .post-main-container h2 {
+  padding: 10px;
+  font-size: 35px;
+  color: #444;
+}
+main .post-main-container h3 {
+  padding: 10px;
+  font-size: 30px;
+  color: #444;
+}
+main .post-main-container h4 {
+  padding: 10px;
+  font-size: 25px;
+  color: #444;
+}
+main .post-main-container p {
+  padding: 10px;
+  font-size: 20px;
+  color: #666;
+}
+main .post-main-container img {
+  width: 100%;
+  margin: 10px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+main .post-main-container figcaption {
+  text-align: center;
+  color: #777;
+}
+main .post-comments-container h3 {
+  padding: 10px;
+  color: #444;
+}
+main .post-comments-container .logged-in-as a {
+  padding: 5px;
+  text-decoration: none;
+  color: #e87979;
+}
+main .post-comments-container .logged-in-as a:hover {
+  color: #e23d3d;
+}
+main .post-comments-container form p {
+  padding: 10px;
+  color: #666;
+}
+main .post-comments-container form textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  color: #666;
+  background-color: #fff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+main .post-comments-container form input[type=submit] {
+  cursor: pointer;
+  padding: 8px 15px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #e87979;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+main .post-comments-container form input[type=submit]:hover {
+  color: #e87979;
+  background-color: #fff;
+}
+main .post-comments-container .commentlist {
+  margin: 10px;
+  list-style: none;
+}
+main .post-comments-container .commentlist .comment {
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+main .post-comments-container .commentlist .comment .children {
+  margin: 5px;
+  list-style: none;
+}
+main .post-comments-container .commentlist .comment .comment-author {
+  padding: 5px;
+}
+main .post-comments-container .commentlist .comment .comment-author img {
+  margin: 5px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+main .post-comments-container .commentlist .comment .comment-author .fn {
+  color: #666;
+}
+main .post-comments-container .commentlist .comment .comment-author .says {
+  color: #666;
+}
+main .post-comments-container .commentlist .comment .comment-meta {
+  padding: 5px;
+}
+main .post-comments-container .commentlist .comment .comment-meta a {
+  text-decoration: none;
+  color: #e87979;
+}
+main .post-comments-container .commentlist .comment .comment-meta a:hover {
+  color: #e23d3d;
+}
+main .post-comments-container .commentlist .comment p {
+  padding: 5px;
+  color: #666;
+}
+main .post-comments-container .commentlist .comment .comment-reply-link {
+  margin: 5px;
+  text-decoration: none;
+  color: #e87979;
+}
+main .post-comments-container .commentlist .comment .comment-reply-link:hover {
+  color: #e23d3d;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #444;
+}
+footer .footer-text {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
