@@ -1,0 +1,367 @@
+$base-color: #f5f5f5;
+$text-color: #666;
+$background2: #eee;
+$background3: #ccc;
+$text-hover-color: #444;
+$button-color: #e87979;
+$button-color-dark: #e23d3d;
+
+//gradient background
+$gradient1: linear-gradient(148deg, rgba(232,121,121,1) 0%, rgba(226,61,61,1) 100%);
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: $base-color;
+}
+
+header {
+
+    .navbar-brand {
+        font-size: 25px;
+    }
+    
+    a {
+        font-size: 20px;
+        color: $text-color;
+
+        &:hover {
+            color: $text-hover-color;
+        }
+    }
+
+    .dropdown-menu {
+        padding: 5px;
+        border: 1px solid $background3;
+        border-radius: 4px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+
+        a {
+            padding: 5px 8px;
+            font-size: 18px;
+            color: $text-color;
+            border-radius: 3px;
+
+            &:hover {
+                color: $text-hover-color;
+                background-color: $background2;
+            }
+        }
+    }
+}
+
+main {
+
+    .post {
+
+        .post-title {
+            padding: 10px 20px;
+            font-size: 40px;
+            color: #333;
+        }
+
+        .post-content {
+            padding: 10px;
+            
+            h2 {
+                padding: 10px;
+                font-size: 35px;
+                color: #444;
+            }
+    
+            h3 {
+                padding: 10px;
+                font-size: 30px;
+                color: #444;
+            }
+    
+            h4 {
+                padding: 10px;
+                font-size: 25px;
+                color: #444;
+            }
+    
+            p {
+                padding: 10px;
+                font-size: 20px;
+                color: $text-color;
+            }
+    
+            img {
+                width: 100%;
+                margin: 10px;
+                box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+            }
+    
+            figcaption {
+                text-align: center;
+                color: #777;
+            }
+
+            .more-link {
+                display: none;
+            }
+        }
+
+        .permalink {
+            display: block;
+            width: -moz-fit-content;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+            background-color: $button-color;
+            border-radius: 4px;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+            transition: all 0.2s;
+
+            &:hover {
+                color: $button-color;
+                background-color: #fff;
+            }
+        }
+    }
+
+    .post-title-container {
+        background: $gradient1;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+
+        .post-title {
+            padding-top: 120px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            font-size: 40px;
+            color: #fff;
+            text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        .post-details {
+            display: flex;
+            background: rgba(0, 0, 0, 0.25);
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+
+            .post-author {
+                padding: 10px;
+                font-size: 18px;
+                color: #fff;
+            }
+
+            .post-date {
+                padding: 10px;
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+    }
+
+    .post-tags-container {
+
+        .post-tags {
+            margin: 25px 5px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .post-tags-title {
+                margin: 8px;
+                font-size: 20px;
+                color: #555;
+            }
+
+            .post-tag {
+                padding: 3px 5px;
+                margin: 5px;
+                text-decoration: none;
+                font-size: 18px;
+                color: $button-color;
+                border: 2px solid $button-color;
+                border-radius: 4px;
+                box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+                transition: all 0.2s;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #fff;
+                    background-color: $button-color;
+                }
+            }
+        }
+    }
+
+    .post-main-container {
+        margin-top: 25px;
+
+        h2 {
+            padding: 10px;
+            font-size: 35px;
+            color: #444;
+        }
+
+        h3 {
+            padding: 10px;
+            font-size: 30px;
+            color: #444;
+        }
+
+        h4 {
+            padding: 10px;
+            font-size: 25px;
+            color: #444;
+        }
+
+        p {
+            padding: 10px;
+            font-size: 20px;
+            color: $text-color;
+        }
+
+        img {
+            width: 100%;
+            margin: 10px;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        figcaption {
+            text-align: center;
+            color: #777;
+        }
+    }
+
+    .post-comments-container {
+    
+        h3 {
+            padding: 10px;
+            color: #444;
+        }
+
+        .logged-in-as {
+
+            a {
+                padding: 5px;
+                text-decoration: none;
+                color: $button-color;
+
+                &:hover {
+                    color: $button-color-dark;
+                }
+            }
+        }
+
+        form {
+
+            p {
+                padding: 10px;
+                color: $text-color;
+            }
+
+            textarea {
+                width: 100%;
+                padding: 5px;
+                font-size: 16px;
+                color: $text-color;
+                background-color: #fff;
+                border: none;
+                border-radius: 3px;
+                box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+            }
+
+            input[type="submit"] {
+                cursor: pointer;
+                padding: 8px 15px;
+                font-size: 20px;
+                color: #fff;
+                background-color: $button-color;
+                border: none;
+                border-radius: 4px;
+                box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+                transition: all 0.2s;
+
+                &:hover {
+                    color: $button-color;
+                    background-color: #fff;
+                }
+            }
+        }
+
+        .commentlist {
+            margin: 10px;
+            list-style: none;
+
+            .comment {
+                margin: 10px 0;
+                padding: 5px;
+                background-color: #fff;
+                box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+                border-radius: 4px;
+
+                .children {
+                    margin: 5px;
+                    list-style: none;
+                }
+                
+                .comment-author {
+                    padding: 5px;
+
+                    img {
+                        margin: 5px;
+                        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+                    }
+
+                    .fn {
+                        color: $text-color;
+                    }
+
+                    .says {
+                        color: $text-color;
+                    }
+                }
+
+                .comment-meta {
+                    padding: 5px;
+
+                    a {
+                        text-decoration: none;
+                        color: $button-color;
+
+                        &:hover {
+                            color: $button-color-dark;
+                        }
+                    }
+                }
+
+                p {
+                    padding: 5px;
+                    color: $text-color;
+                }
+
+                .comment-reply-link {
+                    margin: 5px;
+                    text-decoration: none;
+                    color: $button-color;
+
+                    &:hover {
+                        color: $button-color-dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #444;
+
+    .footer-text {
+        color: #fff;
+    }
+}
