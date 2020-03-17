@@ -26,10 +26,10 @@
     <section class="post-tags-container">
         <div class="container">
             <div class="post-tags">
-                <p class="post-tags-title">Tags:</p>
                 <?php
                     $tags = get_the_tags();
                     if($tags) {
+                        ?> <p class="post-tags-title">Tags:</p> <?php
                         foreach($tags as $tag) {
                             echo '<a href="' . site_url() . '/?tag=' . $tag->slug . '" class="post-tag">' . $tag->name . '</a>';
                         }

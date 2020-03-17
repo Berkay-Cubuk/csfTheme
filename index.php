@@ -6,7 +6,9 @@
                 <div class="post">
                     <h2 class="post-title"><?php the_title(); ?></h2>
                     <div class="post-content"><?php the_content(); ?></div>
-                    <a class="permalink" href="<?php the_permalink(); ?>">Read More</a>
+                    <?php if(get_post_type() == 'post') {
+                        ?> <a class="permalink" href="<?php the_permalink(); ?>">Read More</a> <?php
+                    } ?>
                 </div>
             <?php endwhile; endif; ?>
         </div>

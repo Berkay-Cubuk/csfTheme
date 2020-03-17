@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-sm">
                     <p class="footer-text">
-                        Wordpress &copy; 2020
+                        Made with Wordpress &copy; 2020
                     </p>
                 </div>
                 <div class="col-sm">
