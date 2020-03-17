@@ -23,4 +23,20 @@ register_nav_menus(
 function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
+
 add_action( 'after_setup_theme', 'register_navwalker' );
+
+function custom_pagination() {
+    global $wp_query;
+
+    $total_pages = $wp_query->max_num_pages;
+
+    if($total_pages > 1) {
+        $current_page = max(1, get_query_var('paged'));
+
+        echo paginate_links(array(
+            'current' => $current_page,
+            'total' => $total_pages,
+        ));
+    }
+}

@@ -11,6 +11,9 @@
                     } ?>
                 </div>
             <?php endwhile; endif; ?>
+            <div class="pagination">
+                <?php custom_pagination(); ?>
+            </div>
         </div>
     </main>
 <?php get_footer(); ?>

@@ -4,12 +4,12 @@
             <div class="row">
                 <div class="col-sm">
                     <p class="footer-text">
-                        Made with Wordpress &copy; 2020
+                        Made with <i class="fa fa-heart" aria-hidden="true"></i> for Wordpress
                     </p>
                 </div>
                 <div class="col-sm">
                     <p class="footer-text" style="float:right;">
-                        csfTheme
+                        Theme: <a href="https://github.com/Berkay-Cubuk/csfTheme" target="_blank">csfTheme</a>
                     </p>
                 </div> 
             </div>

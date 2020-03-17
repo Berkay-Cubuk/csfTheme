@@ -272,13 +272,47 @@ main .post-comments-container .commentlist .comment .comment-reply-link {
 main .post-comments-container .commentlist .comment .comment-reply-link:hover {
   color: #e23d3d;
 }
+main .pagination {
+  padding: 15px;
+}
+main .pagination .current {
+  background-color: #444 !important;
+}
+main .pagination .current:hover {
+  color: #fff !important;
+}
+main .pagination .page-numbers {
+  margin: 5px;
+  padding: 3px 8px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #e87979;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+main .pagination .page-numbers:hover {
+  background-color: #fff;
+  color: #e87979;
+}
 
 footer {
   padding: 20px 0;
   background-color: #444;
 }
+footer a {
+  color: #e87979;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #e23d3d;
+}
 footer .footer-text {
+  margin: 5px;
+  padding: 10px;
   color: #fff;
+}
+footer .footer-text i {
+  color: #e23d3d;
 }
 
 /*# sourceMappingURL=style.css.map */

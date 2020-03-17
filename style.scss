@@ -5,6 +5,7 @@ $background3: #ccc;
 $text-hover-color: #444;
 $button-color: #e87979;
 $button-color-dark: #e23d3d;
+$shadow1: 0px 0px 3px rgba(0, 0, 0, 0.25);
 
 //gradient background
 $gradient1: linear-gradient(148deg, rgba(232,121,121,1) 0%, rgba(226,61,61,1) 100%);
@@ -355,13 +356,55 @@ main {
             }
         }
     }
+
+    .pagination {
+        padding: 15px;
+
+        .current {
+            background-color: $text-hover-color !important;
+
+            &:hover {
+                color: #fff !important;
+            }
+        }
+
+        .page-numbers {
+            margin: 5px;
+            padding: 3px 8px;
+            text-decoration: none;
+            color: #fff;
+            background-color: $button-color;
+            border-radius: 4px;
+            box-shadow: $shadow1;
+
+            &:hover {
+                background-color: #fff;
+                color: $button-color;
+            }
+        }
+    }
 }
 
 footer {
     padding: 20px 0;
     background-color: #444;
 
+    a {
+        color: $button-color;
+
+        &:hover {
+            text-decoration: none;
+            color: $button-color-dark;
+        }
+    }
+
     .footer-text {
+        margin: 5px;
+        padding: 10px;
         color: #fff;
+
+        i {
+            color: $button-color-dark;
+        }
     }
 }
